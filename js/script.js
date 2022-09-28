@@ -39,14 +39,16 @@
   optTitleSelector = '.post-title',
   optTitleListSelector = '.titles';
 
-function generateTitleLinks(){
+  function generateTitleLinks(){
 
   /* remove contents of titleList */
-
+     const postContent = document.querySelector(optTitleListSelector)
   /* for each article */
-  
+     for (let post of postContent){
+      postContent.classList.remove(optTitleListSelector)
+     }
     /* get the article id */
-
+    
     /* find the title element */
 
     /* get the title from the title element */
@@ -55,6 +57,6 @@ function generateTitleLinks(){
 
     /* insert link into titleList */
 
-}
+  }
 
-generateTitleLinks();
+  generateTitleLinks();
